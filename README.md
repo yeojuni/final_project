@@ -7,7 +7,7 @@ scikit learn으로 tumor dataset을 가져오고 scikitlearn이 제공하는 패
 
 최적의 모델을 만들기 위해 하이퍼파라미터를 조정해나갔다. 
 
-이때 greedsearch를 사용했다. 하이퍼파라미터의 성능을 비교할 때 쓰기 좋은 탐색방법이었기 때문이다.
+이때 gridsearch를 사용했다. 하이퍼파라미터의 성능을 비교할 때 쓰기 좋은 탐색방법이었기 때문이다.
 
 ---
 ## 2.training dataset 설명
@@ -36,11 +36,11 @@ adaboost를 써보기도 했는데 성능이 좋지 않은 것 같았고, 하이
 
 svm의 하이퍼파라미터에는 C, kernel, degree, gamma 등이 있다.
 
-greedsearch를 통해 최적의 하이퍼파라미터를 찾고자했다.
+gridsearch를 통해 최적의 하이퍼파라미터를 찾고자했다.
 
-처음에는 위의 4가지 파라미터를 greedsearch에 넣어 탐색했으나, 하이퍼파라미터가 많아서인지 아무리 많은 시간을 들여도 실행완료가 되지 않았다.
+처음에는 위의 4가지 파라미터를 gridsearch에 넣어 탐색했으나, 하이퍼파라미터가 많아서인지 아무리 많은 시간을 들여도 실행완료가 되지 않았다.
 
-결국 마지막에는 C와 gamma 2가지 하이퍼파라미터만으로 돌렸고 정확도가 크게 변하지 않을 때 쯤 greedsearch를 멈추었다. 
+결국 마지막에는 C와 gamma 2가지 하이퍼파라미터만으로 돌렸고 정확도가 크게 변하지 않을 때 쯤 gridsearch를 멈추었다. 
 
 ![image](https://github.com/yeojuni/final_project/assets/109058626/21f0e5ab-eafe-4730-9e02-b922f4d6aa60)
 
